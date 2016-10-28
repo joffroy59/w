@@ -1,0 +1,2 @@
+java -field1=value1 -field2=value2 -Drer=ere -field3=value3 sfsfs sdf sd   aaaaa aaaaa
+java -Field1=Value1 -Field2=Value2 -Drer=ere -field3=value3 sfsfs sdf sd   AAAAA AAAAA
