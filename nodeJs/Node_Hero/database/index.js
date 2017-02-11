@@ -2,7 +2,6 @@
 const path = require('path')  
 const express = require('express')  
 const exphbs = require('express-handlebars')
-const fs = require('fs')
 
 const app = express()
 const port = 3000
@@ -27,12 +26,4 @@ app.get('/', (request, response) => {
   response.render('home', {
     name: 'John'
   })
-})
-
-app.post('/users', function (req, res) {  
-    const user = req.body
-    console.log(" /user called");
-    fs.appendFile('users.txt', JSON.stringify({ name: user.name, age: user.age }), (err) => {
-        res.send('successfully registered')
-    })
 })
